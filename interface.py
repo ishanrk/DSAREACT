@@ -53,7 +53,7 @@ class Neuron:
 
 
 def generate_subset_neurons(subset_number):
-    neuron_dataframe = pd.read_json('data.json')
+    neuron_dataframe = pd.read_json('data.json') # THIS IS THE PLACE WHERE NEW DATA WILL GO
     neurons = [row_to_neuron(row) for _, row in neuron_dataframe.iterrows()]
     print(len(neurons))
     in_graph=[]
